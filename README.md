@@ -1,9 +1,10 @@
 <div align="center">
 <h1 align="center">
-<img src="https://github.com/github/barrakat/NOVA/Data/Capture.PNG" width="100" />
 <br>
-NOVA Course report
+[NOVA Course](https://www.deltager.no/event/deep_learning_for_forest_remote_sensing_applications_with_examples_in_python_22052023#init) report
 </h1>
+<img src="https://github.com/barrakat/NOVA/blob/main/Data/Capture.PNG" width="300" />
+
 </div> 
 
 ---
