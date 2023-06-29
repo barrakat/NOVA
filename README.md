@@ -21,7 +21,7 @@ NOVA Course report
 
 ## 📍 Overview
 
-The project README-AI is a tool that automatically generates high-level summaries for codebases using OpenAI's text generation model. It analyzes code repositories, extracts information about dependencies and file structure, and generates a Markdown file with a comprehensive summary of the codebase. The tool saves developers time by providing them with a ready-to-use README file that includes key information about the project. Its value proposition lies in its ability to quickly produce informative and standardized project documentation, making it easier for developers to understand, use, and collaborate on codebases.
+In this project I am comparing the performance of a tree seedling detector by using my own labelled instances (N ) VS the full instances labelled by the entire NOVA group (N ). I am training 3 models for each of the training sets 
 
 ---
 
