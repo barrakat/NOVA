@@ -21,7 +21,7 @@ NOVA Course report
 
 ## 📍 Overview
 
-In this project I am comparing the performance of a tree seedling detector by using my own labelled instances (N ) VS the full instances labelled by the entire NOVA group (N ). I am training 3 models for each of the training sets 
+In this project I am comparing the performance of a tree seedling detector by using my own labelled instances (N ) VS the full instances labelled by the entire NOVA group (N 5074). I am training 3 models for each of the training sets 
 
 ---
 
