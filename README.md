@@ -23,7 +23,7 @@ Report
 
 ## 📍 Overview
 
-In this project I compare the performance of a tree seedling detector in Norway by using my own labelled instances (N 530) from 82 tiled orthomosaics of 10 m size VS the full instances labelled by the whole class group (N 5074) 
+In this project I compare the performance of a tree seedling detector in Norway by using my own labelled instances (N 530, in red in the Figure below) from 82 tiled orthomosaics of 10 m size VS the full instances labelled by the whole class group (N 5074, in bluein the Figure below) 
 
 <img src="https://github.com/barrakat/NOVA/blob/main/Figures/Capture_4.png" width="900" />
 
