@@ -1,7 +1,8 @@
 <div align="center">
 <h1 align="center">
 <br>
-[NOVA Course](https://www.deltager.no/event/deep_learning_for_forest_remote_sensing_applications_with_examples_in_python_22052023#init) report
+Report
+<a href="https://www.deltager.no/event/deep_learning_for_forest_remote_sensing_applications_with_examples_in_python_22052023#init">NOVA Course</a> 
 </h1>
 <img src="https://github.com/barrakat/NOVA/blob/main/Data/Capture.PNG" width="300" />
 
@@ -9,11 +10,11 @@
 
 ---
 
-## 📒 Table of Contents
+## 📒 Project Structure
 [📍 Overview](#-overview)
-[📂 Project Structure](#-project-structure)
-[💻 Installation](#-installation)
+[📂 Folder Structure](#-project-structure)
 [🧪 Running Tests](#-running-tests)
+[💻 Results](#-results)
 [🤝 Contributing](#-contributing)
 [👏 Acknowledgments](#-acknowledgments)
 
@@ -22,7 +23,7 @@
 
 ## 📍 Overview
 
-In this project I am comparing the performance of a tree seedling detector by using my own labelled instances (N ) VS the full instances labelled by the entire NOVA group (N 5074). I am training 3 models for each of the training sets 
+In this project I compare the performance of a tree seedling detector in Norway by using my own labelled instances (N 200) VS the full instances labelled by the whole course group (N 5074) (Figure 1). I trained 3 models per instance group, as explained in Running Tests section below, and discuss the obtained result in the Results section below.
 
 ---
 
