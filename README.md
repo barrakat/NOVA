@@ -23,7 +23,7 @@ Report
 
 ## 📍 Overview
 
-In this project I compare the performance of a tree seedling detector in Norway by using my own labelled instances (N 200) VS the full instances labelled by the whole course group (N 5074) (Figure 1). I trained 3 models per instance group, as explained in Running Tests section below, and discuss the obtained result in the Results section below.
+In this project I compare the performance of a tree seedling detector in Norway by using my own labelled instances (N 200) from 82 tiled orthomosaics of 10 m size VS the full instances labelled by the whole course group (N 5074) (Figure 1). I trained 3 models per instance group, as explained in Running Tests section below, and discuss the obtained result in the Results section below.
 
 ---
 
