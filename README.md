@@ -23,7 +23,7 @@ Report
 
 ## 📍 Overview
 
-In this project I compare the performance of a tree seedling detector (pre-trained model) in Norway by using my own labelled instances (N 530, red quadrants in the Figure below) from 82 tiled orthomosaics of 10 m size VS the full instances labelled by the whole class group (N 5074, blue quadrants in the Figure below) from 3043 tiled orthomosaics of the same size.
+In this project I compare the performance of a tree seedling detector (pre-trained model) in Norway by using my own labelled instances (N 530, red quadrants in the Figure below) from 82 tiled orthomosaics of 10 m size VS the full instances labelled by the whole class group (N 5074, blue quadrants in the Figure below) from 3065 tiled orthomosaics of the same size.
 
 <img src="https://github.com/barrakat/NOVA/blob/main/Figures/Capture_4.png" width="900" />
 
