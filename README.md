@@ -12,7 +12,6 @@ Report
 
 ## 📒 Project Structure
 [📍 Overview](#-overview)
-[📂 Folder Structure](#-project-structure)
 [🧪 Running Tests](#-running-tests)
 [💻 Results](#-results)
 [🤝 Contributing](#-contributing)
@@ -23,17 +22,17 @@ Report
 
 ## 📍 Overview
 
-In this project I compare the performance of a tree seedling detector (pre-trained model) in Norway by using my own labelled instances (N 530, red quadrants in the Figure below) from 82 tiled orthomosaics of 10 m size VS the full instances labelled by the whole class group (N 5074, blue quadrants in the Figure below) from 3065 tiled orthomosaics of the same size.
+In this project I compare the performance of a tree seedling detector in Norway by using my own labelled instances (N 530, red quadrants in the Figure below) from 82 tiled orthomosaics of 10 m size VS the full instances labelled by the whole class group (N 5074, blue quadrants in the Figure below) from 3065 tiled orthomosaics of the same size.
 
 <img src="https://github.com/barrakat/NOVA/blob/main/Figures/Capture_4.png" width="900" />
 
-I trained on them 3 models per instance group, as explained in Running Tests section below, and discuss the obtained result in the Results section below.
+I trained on 2 models per instance group, as explained in Running Tests section below, and discuss the obtained result in the Results section below.
 
 ---
 
-## ⚙️ Features
+## 🧪 Running tests
 
-| Feature                | Description                                                                                                                                                    |
+| Model                | Description                                                                                                                                                    |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **⚙️ Architecture**    | The codebase follows a modular architecture, with different files and modules responsible for specific tasks. The use of factories, wrappers, and handlers promotes code organization and separation of concerns. |
 | **📖 Documentation**   | The codebase is well-documented, with detailed explanations of each file's purpose and functionality. The provided summaries are informative and help understand the codebase.                                        |
@@ -45,98 +44,6 @@ I trained on them 3 models per instance group, as explained in Running Tests sec
 | **🔀 Version Control** | The code repository uses Git for version control. It provides a version history, facilitates collaboration, and allows for easy branching and merging of code changes.                                                        |
 | **🔌 Integrations**    | The codebase integrates with external services and tools such as the OpenAI API, Git repositories, and Docker containers. These integrations enhance the functionality and flexibility of the application.                       |
 | **📶 Scalability**     | The codebase does not explicitly address scalability. However, by using modular design and external services, the application can potentially handle growth and can be extended to support additional features in the future.   |
-
----
-
-
-## 📂 Project Structure
-
-
-```bash
-repo
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── Dockerfile
-├── LICENSE
-├── Makefile
-├── README.md
-├── conf
-│   ├── conf.toml
-│   ├── dependency_files.toml
-│   ├── ignore_files.toml
-│   ├── language_names.toml
-│   ├── language_setup.toml
-│   └── svg
-│       ├── badges.json
-│       └── badges_compressed.json
-├── examples
-│   ├── imgs
-│   │   ├── closing.png
-│   │   ├── demo.png
-│   │   ├── features.png
-│   │   ├── getting_started.png
-│   │   ├── header.png
-│   │   ├── modules.png
-│   │   ├── overview.png
-│   │   └── tree.png
-│   ├── readme-c.md
-│   ├── readme-energy-forecasting.md
-│   ├── readme-fastapi-redis.md
-│   ├── readme-fastapi.md
-│   ├── readme-gitlab.md
-│   ├── readme-go-bash.md
-│   ├── readme-go.md
-│   ├── readme-java.md
-│   ├── readme-javascript-gpt.md
-│   ├── readme-javascript.md
-│   ├── readme-kotlin.md
-│   ├── readme-lanarky.md
-│   ├── readme-mlops.md
-│   ├── readme-pyflink.md
-│   ├── readme-python-ml.md
-│   ├── readme-python.md
-│   ├── readme-react.md
-│   ├── readme-rust-c.md
-│   ├── readme-rust.md
-│   └── readme-typescript.md
-├── poetry.lock
-├── pyproject.toml
-├── requirements.txt
-├── scripts
-│   ├── clean.sh
-│   ├── run.sh
-│   ├── run_batch.sh
-│   └── test.sh
-├── setup
-│   ├── environment.yaml
-│   └── setup.sh
-├── setup.py
-├── src
-│   ├── __init__.py
-│   ├── builder.py
-│   ├── conf.py
-│   ├── factory.py
-│   ├── logger.py
-│   ├── main.py
-│   ├── model.py
-│   ├── parse.py
-│   ├── preprocess.py
-│   └── utils.py
-└── tests
-    ├── __init__.py
-    ├── conftest.py
-    ├── test_builder.py
-    ├── test_conf.py
-    ├── test_factory.py
-    ├── test_logger.py
-    ├── test_main.py
-    ├── test_model.py
-    ├── test_parse.py
-    ├── test_preprocess.py
-    └── test_utils.py
-
-9 directories, 72 files
-```
 
 ---
 
