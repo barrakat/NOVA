@@ -22,7 +22,7 @@ Report
 
 ## 📍 Overview
 
-In this project I compare the performance of the best trained tree seedling detector in Norway by using my own labelled instances (N 530, red quadrants in Figure 1A) from 82 tiled orthomosaics of 10 m size VS the full instances labelled by the whole class group (N 5074, blue quadrants in Figure 1A) from 3065 tiled orthomosaics of the same size (Figure 1C).
+In this project, I am comparing the performance of the best-trained tree seedling detector in Norway. I am using my own labeled instances (530 in total, shown as red quadrants in Figure 1A) extracted from 82 tiled orthomosaics, each measuring 10 meters. These results are being compared against the full instances labeled by the entire class group (5074 in total, shown as blue quadrants in Figure 1A) from 3065 tiled orthomosaics of the same size (Figure 1C).
 
 <pre>
 <figure>
@@ -31,7 +31,7 @@ In this project I compare the performance of the best trained tree seedling dete
 <figure>
 </pre> 
 
-I trained 2 different models per instance group, as explained in Running Tests section below, and discuss the obtained performance results in 4 areas in Norway (Figure 1B) (see Results section below).
+I trained two different models for each instance group, as explained in the "Running Tests" section below. Subsequently, I discuss the performance results obtained in four specific areas in Norway (depicted in Figure 1B). These results are elaborated upon in the "Results" section below.
 
 ---
 
@@ -46,7 +46,7 @@ Code in folder [here](https://github.com/barrakat/NOVA/blob/main/Code).
 | full_inst_YOLOv8_nano_img640  | 300 epochs, 640 image size on full group instances |
 | full_inst_YOLOv8_nano_img1024 | 100 epochs, 1024 image size on full group instances |
 
-Below, in Figure 2, the mAP50 vs duration and memory used by the 4 trained YOLO nano models. It resulted that, lower number of epochs and higher image size resulted in higher mAP50 with both own and full group instances.
+In Figure 2, we can observe the relationship between mAP50 (mean Average Precision at IoU 0.50) and the duration and memory usage of the four trained YOLO nano models. The findings indicate that a lower number of epochs and a higher image size led to higher mAP50 scores for both the own instances and the full group instances.
 
 <pre>
 <figure>
@@ -55,7 +55,7 @@ Below, in Figure 2, the mAP50 vs duration and memory used by the 4 trained YOLO 
 <figure>
 </pre> 
 
-Models YOLOv8_nano_img1024 and full_inst_YOLOv8_nano_img1024 wee then used for making predictions and checking their performance in the 4 testing areas of Figure 1.
+The models YOLOv8_nano_img1024 and full_inst_YOLOv8_nano_img1024 were subsequently utilized to make predictions and evaluate their performance in the four testing areas depicted in Figure 1.
 
 ---
 
@@ -80,11 +80,13 @@ Below, in Figures 3 and 4, the confusion matrix, F1 score and scatterplot of pre
 ---
 ## 🗺 Discussion
 
-> - `ℹ️ Point 1` --> training the models with increased image size had an impact mainly on the used memory (for YOLOv8_nano) and on used memory and duration (for full_inst_YOLOv8_nano). BUT, the mAP50 was always highest by increasing image size and reducing epochs. Between YOLOv8_nano_img1024 and full_inst_YOLOv8_nano_img1024, YOLOv8_nano_img1024 resulted in doubled mAP50 and almost 1/4 duration of the training (Figure 2).
+> - `ℹ️ Point 1` --> Training the models with an increased image size primarily had an impact on the memory usage for YOLOv8_nano and both memory usage and duration for full_inst_YOLOv8_nano. However, despite these differences, the mAP50 consistently showed improvement when image size was increased and epochs were reduced. Comparing YOLOv8_nano_img1024 and full_inst_YOLOv8_nano_img1024, it was observed that YOLOv8_nano_img1024 achieved a doubled mAP50 compared to full_inst_YOLOv8_nano_img1024, while also requiring nearly 1/4th of the training duration (as illustrated in Figure 2).
 
-> - `ℹ️ Point 2` --> The model trained on my own 530 instances (YOLOv8_nano_img1024) showed a very comparable accuracy to the model trained on full 5074 instances (full_inst_YOLOv8_nano_img1024), with a F1 score of 0.45 vs 0.48 of the full model. While YOLOv8_nano_img1024 has slightly higher true positives and lower false positives (Figure 4). Given the lower duration in training (Figure 2) and the very comparable accuracy (Figure 4), training on smaller number of instances was more convenient in this case.
+> - `ℹ️ Point 2` --> The model trained on my own 530 instances (YOLOv8_nano_img1024) demonstrated a remarkably similar accuracy compared to the model trained on the full 5074 instances (full_inst_YOLOv8_nano_img1024), with F1 scores of 0.45 and 0.48, respectively. Notably, YOLOv8_nano_img1024 exhibited slightly higher true positives and lower false positives, as indicated in Figure 4. Considering the lower training duration illustrated in Figure 2 and the highly comparable accuracy displayed in Figure 4, training on a smaller number of instances proved to be more convenient in this particular case.
 
-> - `ℹ️ Point 3` --> In Figure 5 are reported some observed examples where the model YOLOv8_nano_img1024 (in red) failed to make good predictions (in green). One of the main strategies to improve the accuracy of a model is to improve the quality of the training instances. In Figure 5, there are 3 examples of cases that gave some hints on improving the quality of the data. i) label more big leafless trees to be able to map them, ii) be careful with the plant species labelled, iii) try another tile size for labelling the data to avoid having 2 boxes predicted on the same tree.
+> - `ℹ️ Point 3` --> Figure 5 presents several observed examples where the YOLOv8_nano_img1024 model (highlighted in red) failed to make accurate predictions, as denoted by the green boxes. One of the primary strategies for enhancing model accuracy involves improving the quality of training instances. In Figure 5, three specific examples provide valuable insights for improving data quality: i) Labeling more big leafless trees: Including additional labeled instances of large leafless trees would facilitate their proper mapping and detection, ii) Careful labeling of plant species: Paying close attention to the accuracy of plant species labeling is crucial for precise predictions, iii) Exploring alternative tile sizes for data labeling: Trying different tile sizes during the labeling process can help prevent the occurrence of two predicted bounding boxes on the same tree.
+
+By implementing these suggested improvements, it is anticipated that the overall accuracy of the model can be enhanced.
 
 <pre>
 <figure>
@@ -97,6 +99,6 @@ Below, in Figures 3 and 4, the confusion matrix, F1 score and scatterplot of pre
 
 ## 👏 Acknowledgments
 
-> - `ℹ️  I am thankful to Stefano Puliti for his precious teaching and deep learning skills in the forestry domain. Further, I would like to thank Hans Ole Ørka, all the teachers of the NOVA course and all the amazing people met during the week in Ås.`
+> - `ℹ️  I am grateful to Stefano Puliti for his invaluable teaching and expertise in the field of forestry and deep learning. Additionally, I would like to express my gratitude to Hans Ole Ørka, the instructors of the NOVA course, and all the wonderful individuals I had the pleasure of meeting during my time in Ås.`
 
 ---
