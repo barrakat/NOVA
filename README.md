@@ -46,7 +46,7 @@ Code in folder [here](https://github.com/barrakat/NOVA/blob/main/Code).
 | full_inst_YOLOv8_nano_img640  | 300 epochs, 640 image size on full group instances |
 | full_inst_YOLOv8_nano_img1024 | 100 epochs, 1024 image size on full group instances |
 
-Below, in Figure 2, the mAP50 vs duration and memory used by the 4 trained models. It resulted that, lower number of epochs and higher image size resulted in higher mAP50 with both own and full group instances.
+Below, in Figure 2, the mAP50 vs duration and memory used by the 4 trained YOLO nano models. It resulted that, lower number of epochs and higher image size resulted in higher mAP50 with both own and full group instances.
 
 <pre>
 <figure>
@@ -72,17 +72,19 @@ Below, in Figures 3 and 4, the confusion matrix, F1 score and scatterplot of pre
 
 <pre>
 <figure>
-<img src="https://github.com/barrakat/NOVA/blob/main/Figures/Figure_4.png" width="900" />
+<img src="https://github.com/barrakat/NOVA/blob/main/Figures/Figure_4.jpg" width="900" />
 <ins><figcaption>Figure 4</figcaption></ins>
 <figure>
 </pre> 
 
 ---
 ## 🗺 Discussion
-Before you begin, ensure that you have the following prerequisites installed:
-> - `ℹ️ Requirement 1`
-> - `ℹ️ Requirement 2`
-> - `ℹ️ ...`
+
+> - `ℹ️ Point 1` --> training the models with increased image size had an impact mainly on the used memory (for YOLOv8_nano) and on used memory and duration (for full_inst_YOLOv8_nano). BUT, the mAP50 was always highest by increasing image size and reducing epochs. Between YOLOv8_nano_img1024 and full_inst_YOLOv8_nano_img1024, YOLOv8_nano_img1024 resulted in doubled mAP50 and almost 1/4 duration of the training (Figure 2).
+
+> - `ℹ️ Point 2` --> The model trained on my own 530 instances (YOLOv8_nano_img1024) showed a very comparable accuracy to the model trained on full 5074 instances (full_inst_YOLOv8_nano_img1024), with a F1 score of 0.45 vs 0.48 of the full model. While YOLOv8_nano_img1024 has slightly higher true positives and lower false positives (Figure 4). Given the lower duration in training (Figure 2) and the very comparable accuracy (Figure 4), training on smaller number of instances was more convenient in this case.
+
+> - `ℹ️ Point 3`
 
 ---
 
