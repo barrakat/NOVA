@@ -84,11 +84,11 @@ Below, in Figures 3 and 4, the confusion matrix, F1 score and scatterplot of pre
 
 > - `ℹ️ Point 2` --> The model trained on my own 530 instances (YOLOv8_nano_img1024) showed a very comparable accuracy to the model trained on full 5074 instances (full_inst_YOLOv8_nano_img1024), with a F1 score of 0.45 vs 0.48 of the full model. While YOLOv8_nano_img1024 has slightly higher true positives and lower false positives (Figure 4). Given the lower duration in training (Figure 2) and the very comparable accuracy (Figure 4), training on smaller number of instances was more convenient in this case.
 
-> - `ℹ️ Point 3`
+> - `ℹ️ Point 3` --> In Figure 5 are reported some observed examples where the model YOLOv8_nano_img1024 (in red) failed to make good predictions (in green). One of the main strategies to improve the accuracy of a model is to improve the quality of the training instances. In Figure 5, there are 3 examples of cases that gave some hints on improving the quality of the data. i) label more big leafless trees to be able to map them, ii) be careful with the plant species labelled, iii) try another tile size for labelling the data to avoid having 2 boxes predicted on the same tree.
 
 <pre>
 <figure>
-<img src="https://github.com/barrakat/NOVA/blob/main/Figures/Figure_5.jpg" width="900" />
+<img src="https://github.com/barrakat/NOVA/blob/main/Figures/Figure_5.png" width="900" />
 <ins><figcaption>Figure 5</figcaption></ins>
 <figure>
 </pre> 
@@ -97,6 +97,6 @@ Below, in Figures 3 and 4, the confusion matrix, F1 score and scatterplot of pre
 
 ## 👏 Acknowledgments
 
-> - `ℹ️  List any resources, contributors, inspiration, etc.`
+> - `ℹ️  I am thankful to Stefano Puliti for his precious teaching and deep learning skills in the forestry domain. Further, I would like to thank Hans Ole Ørka, all the teachers of the NOVA course and all the amazing people met during the week in Ås.`
 
 ---
