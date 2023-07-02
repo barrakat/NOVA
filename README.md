@@ -1,10 +1,9 @@
-<div align="center">
 <h1 align="center">
 <br>
 Report
 <a href="https://www.deltager.no/event/deep_learning_for_forest_remote_sensing_applications_with_examples_in_python_22052023#init">NOVA Course</a> 
 </h1>
-<img src="https://github.com/barrakat/NOVA/blob/main/Data/Capture.PNG" width="300" />
+<img src="https://github.com/barrakat/NOVA/blob/main/Figures/Capture.PNG" width="300" />
 
 </div> 
 
@@ -14,7 +13,7 @@ Report
 [📍 Overview](#-overview)
 [🧪 Running Tests](#-running-tests)
 [💻 Results](#-results)
-[🤝 Contributing](#-contributing)
+[🗺 Discussion](#-discussion)
 [👏 Acknowledgments](#-acknowledgments)
 
 ---
@@ -22,32 +21,33 @@ Report
 
 ## 📍 Overview
 
-In this project I compare the performance of a tree seedling detector in Norway by using my own labelled instances (N 530, red quadrants in the Figure below) from 82 tiled orthomosaics of 10 m size VS the full instances labelled by the whole class group (N 5074, blue quadrants in the Figure below) from 3065 tiled orthomosaics of the same size.
+In this project I compare the performance of the best trained tree seedling detector in Norway by using my own labelled instances (N 530, red quadrants in Figure 1A) from 82 tiled orthomosaics of 10 m size VS the full instances labelled by the whole class group (N 5074, blue quadrants in Figure 1A) from 3065 tiled orthomosaics of the same size (Figure 1C).
 
-<img src="https://github.com/barrakat/NOVA/blob/main/Figures/Capture_4.png" width="900" />
+<pre>
+<figure>
+<img src="https://github.com/barrakat/NOVA/blob/main/Figures/Figure_1.png" width="900" />
+<ins><figcaption>Figure 1</figcaption></ins>
+<figure>
+</pre> 
 
-I trained on 2 models per instance group, as explained in Running Tests section below, and discuss the obtained result in the Results section below.
+I trained 2 different models per instance group, as explained in Running Tests section below, and discuss the obtained performance results in 4 areas in Norway (Figure 1B) (see Results section below).
 
 ---
 
 ## 🧪 Running tests
 
-| Model                | Description                                                                                                                                                    |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **⚙️ Architecture**    | The codebase follows a modular architecture, with different files and modules responsible for specific tasks. The use of factories, wrappers, and handlers promotes code organization and separation of concerns. |
-| **📖 Documentation**   | The codebase is well-documented, with detailed explanations of each file's purpose and functionality. The provided summaries are informative and help understand the codebase.                                        |
-| **🔗 Dependencies**    | The code relies on external libraries such as pandas and requests for data manipulation and HTTP requests. It uses Git, Python, conda, and additional tools like Tree and SnakeViz for development processes.                                                               |
-| **🧩 Modularity**      | The codebase demonstrates modularity by separating functionalities into different modules and classes. Each module focuses on one aspect of the project, which makes the codebase more maintainable and reusable.                     |
-| **✔️ Testing**         | The codebase has a testing strategy, as evidenced by the presence of a test script. It uses the pytest framework for generating a test coverage report and the SnakeViz tool for analyzing the profiled output.                             |
-| **⚡️ Performance**     | The overall performance of the codebase appears to be efficient. The code utilizes Pandas for data manipulation, performance profiling, and optimization techniques to ensure good performance.                          |
-| **🔐 Security**        | The codebase does not directly handle security-related functionality. However, it generates an OpenAI API key, and handling it securely is important to protect access to the AI model.                                    |
-| **🔀 Version Control** | The code repository uses Git for version control. It provides a version history, facilitates collaboration, and allows for easy branching and merging of code changes.                                                        |
-| **🔌 Integrations**    | The codebase integrates with external services and tools such as the OpenAI API, Git repositories, and Docker containers. These integrations enhance the functionality and flexibility of the application.                       |
-| **📶 Scalability**     | The codebase does not explicitly address scalability. However, by using modular design and external services, the application can potentially handle growth and can be extended to support additional features in the future.   |
+Code in folder [here](https://github.com/barrakat/NOVA/blob/main/Code).
+
+|Model|Description|
+| --------- | ------- |
+| YOLOv8_nano_img640 | 300 epochs, 640 image size on my own instances |
+| YOLOv8_nano_img1024 | 100 epochs, 1024 image size on my own instances |
+| full_inst_YOLOv8_nano_img1024 | 300 epochs, 640 image size on full group instances |
+| full_inst_YOLOv8_nano_img1024 | 100 epochs, 1024 image size on full group instances |
 
 ---
 
-## 🧩 Modules
+## 💻 Results
 
 <details closed><summary>Root</summary>
 
