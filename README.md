@@ -86,6 +86,13 @@ Below, in Figures 3 and 4, the confusion matrix, F1 score and scatterplot of pre
 
 > - `ℹ️ Point 3`
 
+<pre>
+<figure>
+<img src="https://github.com/barrakat/NOVA/blob/main/Figures/Figure_5.jpg" width="900" />
+<ins><figcaption>Figure 5</figcaption></ins>
+<figure>
+</pre> 
+
 ---
 
 ## 👏 Acknowledgments
